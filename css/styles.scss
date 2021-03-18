@@ -43,8 +43,8 @@ body, html{
     font-size: 8rem;
   }
 
-  .container {
-    background: PaleGoldenRod  ;
+  .container-arrow {
+   //background: PaleGoldenRod  ;
     height: 100vh;
     padding: 20px;
     text-align: center;
@@ -99,4 +99,32 @@ body, html{
         opacity: 0.5
       }
        
+  }
+
+  /* Cuenta regresiva */
+
+  #reloj{
+      display: flex;
+      justify-content: center;
+      margin-bottom: 100px;
+  }
+
+  .section-fiesta{
+      margin-top: 100px;
+      padding-left: 150px;
+      padding-right: 150px;
+  }
+
+  .card-img-top-church{
+    height: 100px;
+    width: 100px;
+}
+
+  .card-img-top-cheers{
+    height: 100px;
+    width: 100px;
+  }
+
+  .card{
+      border: none;
   }
