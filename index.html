@@ -8,12 +8,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Clicker+Script&family=Sue+Ellen+Francisco&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Clicker+Script&family=Sue+Ellen+Francisco&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header class="container-gluid no-gutters">
+
+    <!-- Header con foto de los novios -->
+
+    <header>
         <div class="hero-image">
             <div class="hero-text">
                 <h1>Aldu y Juanma</h1>
@@ -30,16 +34,66 @@
         </div>
     </header>
 
+    <!-- Cuenta regresiva -->
+<section>
+   <div class="reloj"></div>
+</section>
+
+  <!-- Ceremonia y Fiesta -->
+  <section class="section-fiesta row">
+    <div class="card mx-auto col-md-6" >
+        <img src="images/church.png" class="card-img-top card-img-top-church mx-auto" alt="church">
+        <div class="card-body text-center">
+          <h5 class="card-title text-center">Ceremonia</h5>
+          <p class="card-text">La ceremonia la realizará Ezequiel Alván el día 8 de Noviembre a las 19:00 horas en la Estacia El Recuerdo. Tocá el botón de abajo para recibir las indicaciones para llegar...</p>
+          <a href="#" class="btn btn-primary btn-dark">Llegar a la ceremonia</a>
+        </div>
+      </div>
+      <div class="card mx-auto col-md-6" >
+        <img src="images/cheers.png" class="card-img-top card-img-top-cheers mx-auto" alt="cheers">
+        <div class="card-body text-center">
+          <h5 class="card-title text-center">Fiesta</h5>
+          <p class="card-text">Después de la ceremonia festejaremos en la Estacia El Recuerdo, Mercedes. Tocá el botón de abajo y encontrá las indicaciones para llegar, te esperamos 😉</p>
+          <a href="#" class="btn btn-primary btn-dark">Llegar a la fiesta</a>
+        </div>
+      </div>
+ </section>
     
-    
+ <!-- Galería de fotos -->
+ <section>
+     <div class="galeria"></div>
+ </section>
+
+ <!-- CBU y regalos -->
+ <section>
+     <div class="cbu"></div>
+ </section>
+
+ <!-- Confirmar asistencia (acá iría el form de google)-->
+ <section>
+     <div class="asistencia"></div>
+ </section>
+
+<!-- Recomendaciones COVID-19 -->
+<section>
+    <div class="recomendaciones"></div>
+</section>
+
+<!-- Gracias -->
+<section>
+    <div class="gracias"></div>
+</section>
+
+<!-- Direccion y mapa -->
+<section>
+    <div class="map"></div>
+</section>
 
 
+<footer>
 
-
-
-
-
+</footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-    <script src="js/main.js" defer></script>
+    <script src="js/countdown.js" defer></script>
 </body>
 </html>
