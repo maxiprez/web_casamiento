@@ -221,4 +221,108 @@ img {
   margin-bottom: 20px;
   color: #ffffff;
 }
+
+.modal-header-gift, .modal-body-gift {
+  border-bottom: 0 none;
+  background-color: #6b705c;
+  color: #f1f1f1;
+}
+
+.btn-dark:hover {
+  color: #292b2c;
+  background-color: #f1f1f1;
+}
+
+.zoom:hover {
+  -webkit-transform: scale(1.1) !important;
+          transform: scale(1.1) !important;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: -webkit-zoom-in;
+  cursor: zoom-in;
+}
+
+.asistencia {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.title-asistencia {
+  font-size: 2rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.p-asistencia {
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.recomendaciones {
+  background-color: #6b705c;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.title-covid {
+  font-size: 2rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.p-covid {
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.gracias {
+  background-color: #b7b7a4;
+  font-size: 1.5rem;
+  font-family: 'Poppins', sans-serif;
+  padding-bottom: 100px;
+  padding-top: 100px;
+}
+
+.map {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #6b705c;
+  padding-bottom: 100px;
+  padding-top: 100px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.map h4 {
+  margin-bottom: 100px;
+  font-size: 2rem;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: black;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+footer p {
+  color: #f1f1f1;
+  font-size: 0.8rem;
+}
 /*# sourceMappingURL=styles.css.map */

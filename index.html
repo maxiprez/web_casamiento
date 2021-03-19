@@ -67,22 +67,22 @@
         <div class="container-lg">
             <div class="row gy-4 row-cols-1 row-cols-sm-2 row-cols-md-3">
                 <div class="col">
-                    <img src="images/4.jpg" class="gallery-item" alt="gallery">
+                    <img src="images/4.jpg" class="gallery-item zoom" alt="gallery">
                 </div>
                 <div class="col">
-                    <img src="images/2.jpg" class="gallery-item" alt="gallery">
+                    <img src="images/2.jpg" class="gallery-item zoom" alt="gallery">
                 </div>
                 <div class="col">
-                    <img src="images/5.jpg" class="gallery-item" alt="gallery">
+                    <img src="images/5.jpg" class="gallery-item zoom" alt="gallery">
                 </div>
                 <div class="col">
-                    <img src="images/7.jpg" class="gallery-item" alt="gallery">
+                    <img src="images/7.jpg" class="gallery-item zoom" alt="gallery">
                 </div>
                 <div class="col">
-                    <img src="images/8.jpg" class="gallery-item" alt="gallery">
+                    <img src="images/8.jpg" class="gallery-item zoom" alt="gallery">
                 </div>
                 <div class="col">
-                    <img src="images/6.jpg" class="gallery-item" alt="gallery">
+                    <img src="images/6.jpg" class="gallery-item zoom" alt="gallery">
                 </div>
             </div>
         </div>
@@ -115,14 +115,14 @@
 
  <!-- Modal de regalos -->
 
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade modal-regalos" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
-        <div class="modal-header">
+        <div class="modal-header modal-header-gift">
           
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="modal-body">
+    <div class="modal-body modal-body-gift">
             <h5 class="text-center modal-title">Datos CBU</h5>
           <div class="text-center cbu-data">
               <p>0170141440000004015062</p>
@@ -134,8 +134,7 @@
               <p>20337774521</p>
               <h5 class="text-center">Nombre</h5>
               <p>PEREZ JUAN MANUEL</p>
-
-        </div>
+         </div>
         </div>
      
       </div>
@@ -144,27 +143,52 @@
 
  <!-- Confirmar asistencia (acá iría el form de google)-->
  <section>
-     <div class="asistencia"></div>
+     <div class="asistencia text-center">
+         <h4 class="title-asistencia">Confirmación de asistencia</h4>
+         <p class="p-asistencia">Esperamos que seas parte de esta gran celebración. ¡Confirmanos tu asistencia!</p>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeyfQW1lXtI5_AU1jkCj1bCplI7V8C3PBUlEI1eExNURcBDCw/viewform?usp=pp_url" target="_blank"><button class="btn btn-dark btn-lg round">Confirmar!</button></a> 
+    </div>
  </section>
 
 <!-- Recomendaciones COVID-19 -->
 <section>
-    <div class="recomendaciones"></div>
+    <div class="recomendaciones text-center">
+        <h4 class="title-covid">Recomendaciones COVID-19</h4>
+        <p class="p-covid">Te dejamos toda información útil sobre qué medidas tomar para compartir una fiesta inolvidable y cuidar a tu abuelita 🥳</p>
+        <a href="https://docs.google.com/document/d/16xXaNm3kkQ8e3klsW2p5y4xerL_D3EbtrZ9J3qlu8jc/edit?usp=sharing" target="_blank"><button class="btn btn-dark btn-lg round">Ver Más</button></a> 
+    </div>
 </section>
 
 <!-- Gracias -->
 <section>
-    <div class="gracias"></div>
+    <div class="gracias text-center">
+        <p>Gracias por acompañarnos en este momento tan importante para nosotros!</p>
+    </div>
 </section>
 
 <!-- Direccion y mapa -->
 <section>
-    <div class="map"></div>
+    <div class="map">
+        <h4>Acá abajo te dejamos el mapa!</h4>
+        <div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
+            <div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div><script>(function () {
+            var setting = {"height":540,"width":540,"zoom":14,"queryString":"Estancia El Recuerdo, Mercedes, Buenos Aires Province, Argentina","place_id":"ChIJt6XyMvVxvJUR_IkLHbz5XNM","satellite":false,"centerCoord":[-34.63392206096895,-59.363819949999986],"cid":"0xd35cf9bc1d0b89fc","lang":"en","cityUrl":"/argentina/lujan-42870","cityAnchorText":"Map of Lujan (Buenos Aires), South Argentina, Argentina","id":"map-9cd199b9cc5410cd3b1ad21cab2e54d3","embed_id":"431937"};
+            var d = document;
+            var s = d.createElement('script');
+            s.src = 'https://1map.com/js/script-for-user.js?embed_id=431937';
+            s.async = true;
+            s.onload = function (e) {
+              window.OneMap.initMap(setting)
+            };
+            var to = d.getElementsByTagName('script')[0];
+            to.parentNode.insertBefore(s, to);
+          })();</script><a href="https://1map.com/map-embed">1 Map</a></div>
+    </div>
 </section>
 
 
 <footer>
-
+        <p>Desarrollado por Maximiliano Prez</p>
 </footer>
   
     <script src="js/simplyCountdown.min.js" defer></script>
