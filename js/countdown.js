@@ -1,30 +1,43 @@
-simplyCountdown('#reloj', {
-	year: 2025, // required
-	month: 2, // required
-	day: 19, // required
-	hours: 7, // Default is 0 [0-23] integer
-	minutes: 31, // Default is 0 [0-59] integer
-	seconds: 0, // Default is 0 [0-59] integer
-	words: { //words displayed into the countdown
-		days: 'Día',
-		hours: 'Hora',
-		minutes: 'Minuto',
-		seconds: 'Segundo',
-		pluralLetter: 's'
-	},
-	plural: true, //use plurals
-	inline: false, //set to true to get an inline basic countdown like : 24 days, 4 hours, 2 minutes, 5 seconds
-	inlineClass: 'simply-countdown-inline', //inline css span class in case of inline = true
-	// in case of inline set to false
-	enableUtc: true, //Use UTC as default
-	onEnd: function() {
-		document.getElementById('portada').classList.add('oculta');
-		return; 
-	}, //Callback on countdown end, put your own function here
-	refresh: 1000, // default refresh every 1s
-	sectionClass: 'simply-section', //section css class
-	amountClass: 'simply-amount', // amount css class
-	wordClass: 'simply-word', // word css class
-	zeroPad: false,
-	countUp: false
-});
+const getRamainTime = deadline => {
+
+	let now = new Date(),
+
+	remainTime = (new Date (deadline) - now + 1000) / 1000,
+	remainSeconds = ('0' + Math.floor(remainTime % 60)).slice(-2),
+	remainMinutes = ('0' + Math.floor(remainTime / 60 % 60)).slice(-2),
+	remainHours = ('0' + Math.floor(remainTime / 3600 % 24)).slice(-2),
+	remainDays = Math.floor(remainTime / (3600 * 24));
+
+
+	return {
+		remainTime,
+		remainSeconds,
+		remainMinutes,
+		remainHours,
+		remainDays
+	}
+};
+
+//console.log(getRamainTime('Sat Nov 06 2021 19:00:00 GMT-0300'));
+
+
+
+const countdown = (deadline, elem, finalMessage) => {
+ const el = document.getElementById(elem);
+
+ const timerUpdate = setInterval ( ()=>{
+
+	let t = getRamainTime(deadline);
+
+	el.innerHTML = `${t.remainDays} Días ${t.remainHours} Horas ${t.remainMinutes} Minutos ${t.remainSeconds} Segundos`;
+
+	if(t.remainTime <= 1){
+		clearInterval(timerUpdate);
+		el.innerHTML = finalMessage;
+	}
+
+ }, 1000)
+
+};
+
+countdown ('Sat Nov 06 2021 19:00:00 GMT-0300', 'clock', 'Es Hoy!!!');

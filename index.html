@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wedding Nightmares</title>
  
-
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Clicker+Script&family=Sue+Ellen+Francisco&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
@@ -23,7 +24,7 @@
             </div>
         </div>
         <div class="content">
-            <a href="#">
+            <a href="#clock-link">
                 <svg id="more-arrows">
                     <polygon class="arrow-top" points="37.6,27.9 1.8,1.3 3.3,0 37.6,25.3 71.9,0 73.7,1.3 "/>
                     <polygon class="arrow-middle" points="37.6,45.8 0.8,18.7 4.4,16.4 37.6,41.2 71.2,16.4 74.5,18.7 "/>
@@ -34,33 +35,35 @@
     </header>
 
     <!-- Cuenta regresiva -->
-<section>
-   <div class="reloj"></div>
+<section id="clock-link" class="clock-section">
+    <div><h3 class="clock-title-top text-center">Faltan</h3></div>
+   <div id="clock" class="clock text-center"></div>
+   <div><h3 class="clock-title-bottom text-center">Para darsela en la pera!</h3></div>
 </section>
 
   <!-- Ceremonia y Fiesta -->
   <section class="section-fiesta row">
     <div class="card mx-auto col-md-6" >
         <img src="images/church.png" class="card-img-top card-img-top-church mx-auto" alt="church">
-        <div class="card-body text-center">
+        <div class="card-body text-center d-flex flex-column">
           <h5 class="card-title text-center">Ceremonia</h5>
           <p class="card-text">La ceremonia la realizará el Rabino Ezequiel Alván el día 8 de Noviembre a las 19:00 horas en la Estacia El Recuerdo. Tocá el botón de abajo para recibir las indicaciones para llegar...</p>
-          <a href="https://goo.gl/maps/JJ6a1JMeCLMdsRxk6" target="_blank"  class="btn btn-primary btn-dark">Llegar a la ceremonia</a>
+          <a href="https://goo.gl/maps/JJ6a1JMeCLMdsRxk6" target="_blank"  class="btn btn-primary btn-lg round btn-dark mt-auto">Llegar a la ceremonia</a>
         </div>
       </div>
       <div class="card mx-auto col-md-6" >
         <img src="images/cheers.png" class="card-img-top card-img-top-cheers mx-auto" alt="cheers">
-        <div class="card-body text-center">
+        <div class="card-body text-center d-flex flex-column">
           <h5 class="card-title text-center">Fiesta</h5>
           <p class="card-text">Después de la ceremonia festejaremos en la Estacia El Recuerdo, Mercedes. Tocá el botón de abajo y encontrá las indicaciones para llegar, te esperamos 😉</p>
-          <a href="https://goo.gl/maps/JJ6a1JMeCLMdsRxk6" target="_blank" class="btn btn-primary btn-dark">Llegar a la fiesta</a>
+          <a href="https://goo.gl/maps/JJ6a1JMeCLMdsRxk6" target="_blank" class="btn btn-primary btn-lg round btn-dark mt-auto">Llegar a la fiesta</a>
         </div>
       </div>
  </section>
     
  <!-- Galería de fotos -->
  <section class="gallery min-vh-100">
-     <h4 class="text-center mb-4">Nuestra Historia</h4>
+     <h4 class="text-center mb-4 title-gallery">Nuestra Historia</h4>
         <div class="container-lg">
             <div class="row gy-4 row-cols-1 row-cols-sm-2 row-cols-md-3">
                 <div class="col">
@@ -103,10 +106,41 @@
 
 
  <!-- CBU y regalos -->
- <section>
+ <section class="gift-section">
+     <div class="gift-icon"><img src="images/gift.png" alt=""></div>
+    
      <div class="text-center"><p>Si deseás realizarnos un regalo podés colaborar con nuestra Lista de Regalos...</p></div>
-     <div class="cbu"><button class="btn btn-dark">Regalar</button></div>
+     <div class="cbu text-center"><button class="btn btn-dark btn-lg round" data-bs-toggle="modal" data-bs-target="#exampleModal">Regalar</button></div>
  </section>
+
+ <!-- Modal de regalos -->
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <h5 class="text-center modal-title">Datos CBU</h5>
+          <div class="text-center cbu-data">
+              <p>0170141440000004015062</p>
+              <p>Caja de ahorro</p>
+              <p>BBVA FRANCES</p>
+              <h5 class="text-center">Alias</h5>
+              <p>jack.johnny.jim</p>
+              <h5 class="text-center">CUIT /CUIL /DNI</h5>
+              <p>20337774521</p>
+              <h5 class="text-center">Nombre</h5>
+              <p>PEREZ JUAN MANUEL</p>
+
+        </div>
+        </div>
+     
+      </div>
+    </div>
+  </div>
 
  <!-- Confirmar asistencia (acá iría el form de google)-->
  <section>
@@ -133,7 +167,7 @@
 
 </footer>
   
-
+    <script src="js/simplyCountdown.min.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
     <script src="js/countdown.js" defer></script>
     <script src="js/pictures.js" defer></script>

@@ -102,19 +102,59 @@ body, html{
   }
 
   /* Cuenta regresiva */
-
-  #reloj{
-      display: flex;
-      justify-content: center;
-      margin-bottom: 100px;
+  .clock-section{
+    //margin-top: 100px;
+    padding-top: 50px ;
+    padding-bottom: 50px;
+    background-color: #6b705c;
   }
+
+.clock-title-top{
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+}
+
+.clock-title-bottom{
+  margin-top: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+}
+
+ .clock{
+  font-family: 'Poppins', sans-serif;
+   margin-top: 10px;
+   font-size: 2rem;
+ }
+
+   /* Cuenta regresiva */
 
   .section-fiesta{
       margin-top: 100px;
       padding-left: 150px;
       padding-right: 150px;
+      font-family: 'Poppins', sans-serif;
   }
 
+
+//Botones
+
+.round {
+  border-radius: 24px;
+}
+
+//Botones
+
+
+  /* Cuenta regresiva */
+
+  /* Cards */
+
+ .card-title{
+  font-weight: 900;
+ }
+.card-text{
+  font-family: 'Poppins', sans-serif;
+}
   .card-img-top-church{
     height: 100px;
     width: 100px;
@@ -129,7 +169,13 @@ body, html{
       border: none;
   }
 
+ /* Cards */
+
   //Fotos
+  .title-gallery{
+    font-family: 'Poppins', sans-serif;
+  }
+
   img{
       max-width: 100%;
   }
@@ -153,3 +199,29 @@ body, html{
 
   }
   //Fotos
+
+  // Regalos
+.gift-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #6b705c;
+  padding-bottom: 100px;
+  padding-top: 100px;
+  font-family: 'Poppins', sans-serif;
+    p{
+      font-size: 1.3rem;
+      margin-bottom: 55px;
+    }
+}
+
+.gift-icon{
+ 
+  height: 200px;
+  width: 200px;
+  font-size: 5.5rem;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+  //Regalos
