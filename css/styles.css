@@ -132,4 +132,26 @@ polygon.arrow-top {
 .card {
   border: none;
 }
+
+img {
+  max-width: 100%;
+}
+
+.gallery {
+  padding: 80ps, 0;
+  margin-top: 200px;
+}
+
+.gallery img {
+  background-color: #ffffff;
+  padding: 15px;
+  width: 100%;
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+#gallery-modal .modal-img {
+  width: 100%;
+}
 /*# sourceMappingURL=styles.css.map */

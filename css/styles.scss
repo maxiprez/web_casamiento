@@ -128,3 +128,28 @@ body, html{
   .card{
       border: none;
   }
+
+  //Fotos
+  img{
+      max-width: 100%;
+  }
+  .gallery{
+      //background-color: #dbddf1;
+      padding: 80ps, 0;
+      margin-top: 200px;
+  }
+
+  .gallery img{
+      background-color: #ffffff;
+      padding: 15px;
+      width: 100%;
+      box-shadow: 0 0 15px rgba(0,0,0,0.3);
+      cursor: pointer;
+  }
+ 
+
+  #gallery-modal .modal-img{
+    width: 100%;
+
+  }
+  //Fotos

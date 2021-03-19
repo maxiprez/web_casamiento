@@ -5,10 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wedding Nightmares</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+ 
+
+
     <link href="https://fonts.googleapis.com/css2?family=Clicker+Script&family=Sue+Ellen+Francisco&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
@@ -45,8 +44,8 @@
         <img src="images/church.png" class="card-img-top card-img-top-church mx-auto" alt="church">
         <div class="card-body text-center">
           <h5 class="card-title text-center">Ceremonia</h5>
-          <p class="card-text">La ceremonia la realizará Ezequiel Alván el día 8 de Noviembre a las 19:00 horas en la Estacia El Recuerdo. Tocá el botón de abajo para recibir las indicaciones para llegar...</p>
-          <a href="#" class="btn btn-primary btn-dark">Llegar a la ceremonia</a>
+          <p class="card-text">La ceremonia la realizará el Rabino Ezequiel Alván el día 8 de Noviembre a las 19:00 horas en la Estacia El Recuerdo. Tocá el botón de abajo para recibir las indicaciones para llegar...</p>
+          <a href="https://goo.gl/maps/JJ6a1JMeCLMdsRxk6" target="_blank"  class="btn btn-primary btn-dark">Llegar a la ceremonia</a>
         </div>
       </div>
       <div class="card mx-auto col-md-6" >
@@ -54,19 +53,59 @@
         <div class="card-body text-center">
           <h5 class="card-title text-center">Fiesta</h5>
           <p class="card-text">Después de la ceremonia festejaremos en la Estacia El Recuerdo, Mercedes. Tocá el botón de abajo y encontrá las indicaciones para llegar, te esperamos 😉</p>
-          <a href="#" class="btn btn-primary btn-dark">Llegar a la fiesta</a>
+          <a href="https://goo.gl/maps/JJ6a1JMeCLMdsRxk6" target="_blank" class="btn btn-primary btn-dark">Llegar a la fiesta</a>
         </div>
       </div>
  </section>
     
  <!-- Galería de fotos -->
- <section>
-     <div class="galeria"></div>
+ <section class="gallery min-vh-100">
+     <h4 class="text-center mb-4">Nuestra Historia</h4>
+        <div class="container-lg">
+            <div class="row gy-4 row-cols-1 row-cols-sm-2 row-cols-md-3">
+                <div class="col">
+                    <img src="images/4.jpg" class="gallery-item" alt="gallery">
+                </div>
+                <div class="col">
+                    <img src="images/2.jpg" class="gallery-item" alt="gallery">
+                </div>
+                <div class="col">
+                    <img src="images/5.jpg" class="gallery-item" alt="gallery">
+                </div>
+                <div class="col">
+                    <img src="images/7.jpg" class="gallery-item" alt="gallery">
+                </div>
+                <div class="col">
+                    <img src="images/8.jpg" class="gallery-item" alt="gallery">
+                </div>
+                <div class="col">
+                    <img src="images/6.jpg" class="gallery-item" alt="gallery">
+                </div>
+            </div>
+        </div>
  </section>
+
+  <!-- Modal -->
+  <div class="modal fade" id="gallery-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <!--<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>-->
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="images/2.jpg" class="modal-img" alt="">
+        </div>
+       
+      </div>
+    </div>
+  </div>
+
 
  <!-- CBU y regalos -->
  <section>
-     <div class="cbu"></div>
+     <div class="text-center"><p>Si deseás realizarnos un regalo podés colaborar con nuestra Lista de Regalos...</p></div>
+     <div class="cbu"><button class="btn btn-dark">Regalar</button></div>
  </section>
 
  <!-- Confirmar asistencia (acá iría el form de google)-->
@@ -93,7 +132,10 @@
 <footer>
 
 </footer>
+  
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
     <script src="js/countdown.js" defer></script>
+    <script src="js/pictures.js" defer></script>
 </body>
 </html>
