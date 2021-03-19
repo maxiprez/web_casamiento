@@ -325,3 +325,7 @@ body, html{
     }
   }
   // Footer
+
+  #last + div {
+    visibility: hidden;
+  }

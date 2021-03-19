@@ -325,4 +325,8 @@ footer p {
   color: #f1f1f1;
   font-size: 0.8rem;
 }
+
+#last + div {
+  visibility: hidden;
+}
 /*# sourceMappingURL=styles.css.map */
