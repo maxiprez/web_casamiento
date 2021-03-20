@@ -1,38 +1,38 @@
-body, html{
+ html{
     height: 100% ;
+    scroll-behavior: smooth;   
 }
+
+body{
+   overflow-x: hidden;
+}
+
+.hero-image {
+  min-height:  680px;
+
+  /* Text styles */
+  text-align: center;
+  color: white;
+  
+  /* Background styles */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('../images/hero-image.jpg');
+ 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
 
 .no-gutters{
     padding: 0 auto;
     margin: 0 auto;
 }
 
-.hero-image {
-    width: 100vw;
-    height: 100vh;
 
-    
-    /* Flexbox stuff */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    /* Text styles */
-    text-align: center;
-    color: white;
-    
-    /* Background styles */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('../images/hero-image.jpg');
-    /*background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;*/
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-  }
-  
+
+
   /* Place text in the middle of the image */
   .hero-text {
     text-align: center;
@@ -131,6 +131,18 @@ body, html{
   font-family: 'Poppins', sans-serif;
    margin-top: 10px;
    font-size: 2rem;
+ }
+ @media screen and (max-width: 480px){
+   .clock-section{
+    padding-left: 10px;
+    padding-right: 10px;
+      #clock{
+        font-size: 1rem;
+      }
+      h3{
+        font-size: 1rem;
+      }
+   }
  }
  /* Cuenta regresiva */
 
