@@ -26,10 +26,14 @@ body, html {
   /* Background styles */
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../images/hero-image.jpg");
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/hero-image.jpg");
-  background-size: cover;
-  background-position: center center;
+  /*background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;*/
+  background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
 }
 
 /* Place text in the middle of the image */
@@ -189,7 +193,8 @@ img {
 
 .gallery {
   padding: 80ps, 0;
-  margin-top: 200px;
+  margin-top: 150px;
+  margin-bottom: 150px;
 }
 
 .gallery img {
@@ -302,6 +307,8 @@ img {
 @media screen and (max-width: 480px) {
   .gracias p {
     font-size: 1rem !important;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 }
 

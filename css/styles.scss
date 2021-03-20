@@ -10,6 +10,7 @@ body, html{
 .hero-image {
     width: 100vw;
     height: 100vh;
+
     
     /* Flexbox stuff */
     display: flex;
@@ -22,10 +23,14 @@ body, html{
     
     /* Background styles */
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('../images/hero-image.jpg');
-    background-size: cover;
+    /*background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: fixed;*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
   }
   
   /* Place text in the middle of the image */
@@ -190,9 +195,10 @@ body, html{
       max-width: 100%;
   }
   .gallery{
-      //background-color: #dbddf1;
+      
       padding: 80ps, 0;
-      margin-top: 200px;
+      margin-top: 150px;
+      margin-bottom: 150px;
   }
 
   .gallery img{
@@ -306,6 +312,8 @@ body, html{
       
       p{
         font-size: 1rem !important;
+        margin-left: 10px;
+        margin-right: 10px;
       }
     }
   }
