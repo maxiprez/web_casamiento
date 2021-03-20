@@ -21,7 +21,7 @@ body, html{
     color: white;
     
     /* Background styles */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('https://instagram.faep6-1.fna.fbcdn.net/v/t51.2885-15/e35/s1080x1080/148165352_422970348932359_3052268432073142502_n.jpg?tp=1&_nc_ht=instagram.faep6-1.fna.fbcdn.net&_nc_cat=107&_nc_ohc=XSmq3Xb5d3gAX-aHyMX&ccb=7-4&oh=bb2da3b6c6e4d1e45bb8e4898391af77&oe=607BD122');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('../images/hero-image.jpg');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -44,7 +44,6 @@ body, html{
   }
 
   .container-arrow {
-   //background: PaleGoldenRod  ;
     height: 100vh;
     padding: 20px;
     text-align: center;
@@ -103,21 +102,24 @@ body, html{
 
   /* Cuenta regresiva */
   .clock-section{
-    //margin-top: 100px;
     padding-top: 50px ;
     padding-bottom: 50px;
     background-color: #6b705c;
   }
 
+#clock{
+  font-size: 1.5rem;
+  font-family: 'Poppins', sans-serif;
+}
 .clock-title-top{
   font-family: 'Poppins', sans-serif;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .clock-title-bottom{
   margin-top: 20px;
   font-family: 'Poppins', sans-serif;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
  .clock{
@@ -125,35 +127,33 @@ body, html{
    margin-top: 10px;
    font-size: 2rem;
  }
+ /* Cuenta regresiva */
 
-   /* Cuenta regresiva */
-
+ /* Seccion cards fiesta */
   .section-fiesta{
-      margin-top: 100px;
-      padding-left: 150px;
-      padding-right: 150px;
-      font-family: 'Poppins', sans-serif;
+     margin-top: 100px;
+     margin-left: 100px;
+     margin-right: 100px;
+     // font-family: 'Poppins', sans-serif;
   }
 
+  // Media query para que se vea bien en moviles
+  @media screen and (max-width: 480px) {
+    .section-fiesta{
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+      img {
+        margin-top: 50px !important;
+      }
+    }
+    
+  }
 
-//Botones
-
-.round {
-  border-radius: 24px;
-}
-
-//Botones
-
-
-  /* Cuenta regresiva */
-
-  /* Cards */
-
- .card-title{
-  font-weight: 900;
- }
+  
 .card-text{
   font-family: 'Poppins', sans-serif;
+  margin-bottom: 50px;
+  margin-top: 25px;
 }
   .card-img-top-church{
     height: 100px;
@@ -168,10 +168,20 @@ body, html{
   .card{
       border: none;
   }
+  /* Seccion cards fiesta */
 
- /* Cards */
+//Botones
+.round {
+  border-radius: 24px;}
 
-  //Fotos
+  .btn-dark:hover{
+    color: #292b2c;
+    background-color: #f1f1f1;
+  }
+//Botones
+
+
+//Fotos
   .title-gallery{
     font-family: 'Poppins', sans-serif;
   }
@@ -198,9 +208,9 @@ body, html{
     width: 100%;
 
   }
-  //Fotos
+ //Fotos
 
-  // Regalos
+/* Regalos */
 .gift-section{
   display: flex;
   flex-direction: column;
@@ -211,13 +221,12 @@ body, html{
   padding-top: 100px;
   font-family: 'Poppins', sans-serif;
     p{
-      font-size: 1.3rem;
+      font-size: 1rem;
       margin-bottom: 55px;
     }
 }
 
 .gift-icon{
- 
   height: 200px;
   width: 200px;
   font-size: 5.5rem;
@@ -226,30 +235,24 @@ body, html{
 }
 
   //Modal Regalos
-    .modal-header-gift, .modal-body-gift{
-      border-bottom: 0 none;
-      background-color: #6b705c;
-      color: #f1f1f1;
-    }
+      .modal-header-gift, .modal-body-gift{
+        border-bottom: 0 none;
+        background-color: #6b705c;
+        color: #f1f1f1;
+      }
   //Modal Regalos
 
-  
-  // Buttons
-  .btn-dark:hover{
-    color: #292b2c;
-    background-color: #f1f1f1;
-  }
-  // Buttons
+/* Regalos */
 
-  // Zoom para que escalen las fotos al hacer hover
+  
+// Zoom para que escalen las fotos al hacer hover
   .zoom:hover {
     transform: scale(1.1) !important;
     transition: 0.3s;
-    cursor: zoom-in;
-       }
-  // Zoom
+    cursor: zoom-in;}
+// Zoom
 
-  // Seccion asistencia
+// Seccion asistencia
 .asistencia{
   padding-top: 100px;
   padding-bottom: 50px;
@@ -264,9 +267,9 @@ body, html{
     font-size: 1rem;
     font-family: 'Poppins', sans-serif;
   }
-  // Seccion asistencia
+// Seccion asistencia
 
-  // Seccion COVID
+// Seccion COVID
   .recomendaciones{
     background-color: #6b705c;
     padding-top: 100px;
@@ -282,19 +285,33 @@ body, html{
     font-size: 1rem;
     font-family: 'Poppins', sans-serif;
   }
-  // Seccion COVID
+// Seccion COVID
 
-  // Gracias
+// Gracias
   .gracias{
     background-color: #b7b7a4;
-    font-size: 1.5rem;
+    //font-size: 2rem;
     font-family: 'Poppins', sans-serif;
     padding-bottom: 100px;
     padding-top: 100px;
+    p{
+      font-size: 1.3rem;
+      padding-bottom: 20px !important;
+      padding-top: 20px !important;
+    }
   }
-  // Gracias
 
-  // Map
+  @media screen and (max-width: 480px){
+    .gracias{
+      
+      p{
+        font-size: 1rem !important;
+      }
+    }
+  }
+// Gracias
+
+// Map
   .map{
     display: flex;
     flex-direction: column;
@@ -306,12 +323,23 @@ body, html{
     font-family: 'Poppins', sans-serif;
     h4{
       margin-bottom: 100px;
-      font-size: 2rem;
+      font-size: 1.5rem;
     }
   }
-  // Map
+  @media screen and (max-width: 480px){
+    .map h4{
+      //margin-bottom: 50px;
+      font-size: 1rem;
+      //margin-top: 50px;
+      padding-bottom: 20px !important;
+      padding-top: 20px !important;
+    }
 
-  // Footer
+  }
+
+// Map
+
+// Footer
   footer{
     display: flex;
     justify-content: center;
@@ -324,8 +352,10 @@ body, html{
       font-size: 0.8rem;
     }
   }
-  // Footer
+// Footer
 
+// Ultimo div para ocultar la water mark
   #last + div {
     visibility: hidden;
   }
+// Ultimo div para ocultar la water mark
